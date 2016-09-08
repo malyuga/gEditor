@@ -1,0 +1,11 @@
+Index: src/client/forms/UI.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/client/forms/UI.form	(revision )
++++ src/client/forms/UI.form	(revision )
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.forms.UI"/>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1"/>

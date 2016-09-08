@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="server.Main">
+  <grid id="27dc6" binding="pnlMain" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="491"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="b0e73" binding="panel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="f3951" binding="pnlConnect" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="fa1d8">
+                <constraints/>
+              </hspacer>
+              <component id="a2542" class="javax.swing.JButton" binding="btnStart">
+                <constraints/>
+                <properties>
+                  <text value="Запуск сервера"/>
+                </properties>
+              </component>
+              <component id="c64f6" class="javax.swing.JButton" binding="btnStop">
+                <constraints/>
+                <properties>
+                  <text value="Остановка сервера"/>
+                </properties>
+              </component>
+              <hspacer id="d0f38">
+                <constraints/>
+              </hspacer>
+            </children>
+          </grid>
+          <component id="a28dd" class="javax.swing.JLabel" binding="lblStatus">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Статус: "/>
+            </properties>
+          </component>
+          <component id="bb96d" class="javax.swing.JLabel" binding="lblStatusText">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5617e" binding="pnlEdit" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1d674" class="javax.swing.JLabel" binding="fullUrl">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Полный URL:"/>
+            </properties>
+          </component>
+          <component id="cfdb9" class="javax.swing.JTextField" binding="edtURL">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="383f2" class="javax.swing.JLabel" binding="lblName">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Имя пользователя базы"/>
+            </properties>
+          </component>
+          <component id="e64b0" class="javax.swing.JTextField" binding="edtName">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="57093" class="javax.swing.JLabel" binding="lblPass">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Пароль"/>
+            </properties>
+          </component>
+          <component id="db89f" class="javax.swing.JTextField" binding="edtPass">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="4cb6c" class="javax.swing.JLabel" binding="lblDriver">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="jdbc Драйввер"/>
+            </properties>
+          </component>
+          <component id="21075" class="javax.swing.JTextField" binding="edtDriver">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <grid id="f6918" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ac380" class="javax.swing.JButton" binding="btnTest">
+                <constraints/>
+                <properties>
+                  <text value="Тест"/>
+                </properties>
+              </component>
+              <component id="2399f" class="javax.swing.JButton" binding="btnApply">
+                <constraints/>
+                <properties>
+                  <text value="Применить"/>
+                </properties>
+              </component>
+              <component id="da794" class="javax.swing.JButton" binding="btnDefault">
+                <constraints/>
+                <properties>
+                  <text value="По умолчанию"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="5dcb5" class="javax.swing.JTextField" binding="edtPort">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d842e" class="javax.swing.JTextField" binding="edtHost">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="940c9" class="javax.swing.JLabel" binding="lblPort">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="28" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Порт"/>
+            </properties>
+          </component>
+          <component id="411ac" class="javax.swing.JLabel" binding="lblHost">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="56" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Имя хоста"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

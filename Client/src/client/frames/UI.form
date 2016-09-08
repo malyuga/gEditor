@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.frames.UI">
+  <grid id="27dc6" binding="main_panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="661" height="398"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="5e274" binding="panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="bevel-raised"/>
+        <children>
+          <grid id="46310" binding="pnlMenus" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="10cbd" class="javax.swing.JMenuBar" binding="menuBar" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="3">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <margin top="0" left="0" bottom="0" right="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="fab45" class="javax.swing.JMenuItem" binding="miNew" custom-create="true" layout-manager="FlowLayout" hgap="0" vgap="5" flow-align="1">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="false"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="11"/>
+                      <selected value="false"/>
+                      <text value=""/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                  <grid id="53936" class="javax.swing.JMenuItem" binding="miOpen" custom-create="true" layout-manager="GridBagLayout">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="false"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                  <grid id="5ccfd" class="javax.swing.JMenuItem" binding="miSave" custom-create="true" layout-manager="GridBagLayout">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="true"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                  <grid id="d528f" class="javax.swing.JMenuItem" binding="miDelete" custom-create="true" layout-manager="GridBagLayout">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="true"/>
+                      <horizontalAlignment value="2"/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                  <component id="be522" class="javax.swing.JSeparator" binding="separator1">
+                    <constraints/>
+                    <properties>
+                      <enabled value="true"/>
+                    </properties>
+                  </component>
+                  <grid id="f46c4" class="javax.swing.JMenuItem" binding="miUndo" custom-create="true" layout-manager="GridBagLayout">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="true"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                      <visible value="false"/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                  <grid id="9c9c5" class="javax.swing.JMenuItem" binding="miRedo" custom-create="true" layout-manager="GridBagLayout">
+                    <constraints/>
+                    <properties>
+                      <armed value="false"/>
+                      <hideActionText value="true"/>
+                      <horizontalAlignment value="2"/>
+                      <text value=""/>
+                      <visible value="false"/>
+                    </properties>
+                    <border type="etched"/>
+                    <children/>
+                  </grid>
+                </children>
+              </grid>
+              <toolbar id="6f05d" binding="toolBar">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <visible value="false"/>
+                </properties>
+                <border type="line">
+                  <font/>
+                </border>
+                <children>
+                  <grid id="f10f" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints/>
+                    <properties/>
+                    <border type="etched"/>
+                    <children>
+                      <grid id="f8364" class="javax.swing.JMenuItem" binding="miMinCicle" layout-manager="FlowLayout" hgap="0" vgap="5" flow-align="0">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalAlignment value="2"/>
+                          <horizontalTextPosition value="4"/>
+                          <selected value="true"/>
+                          <text value="Цикл минимальной длины"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="a1369" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints/>
+                    <properties/>
+                    <border type="etched"/>
+                    <children>
+                      <grid id="24bef" class="javax.swing.JMenuItem" binding="miShortWay" layout-manager="FlowLayout" hgap="0" vgap="5" flow-align="0">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Кратчайший путь"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="4c808" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints/>
+                    <properties/>
+                    <border type="etched"/>
+                    <children>
+                      <grid id="6d5ef" class="javax.swing.JMenuItem" binding="miMinTree" layout-manager="FlowLayout" hgap="0" vgap="5" flow-align="0">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Минимальное остовное дерево"/>
+                        </properties>
+                        <border type="none"/>
+                        <children/>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </toolbar>
+            </children>
+          </grid>
+          <grid id="b5edf" binding="pnlButtons" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8bf04" class="javax.swing.JButton" binding="btnNode" custom-create="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="7f8cb" class="javax.swing.JButton" binding="btnOEdge" custom-create="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e9ba0" class="javax.swing.JButton" binding="btnNOEdge" custom-create="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="1193d" class="javax.swing.JButton" binding="btnDeleteGraphElem" custom-create="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="fd644" class="javax.swing.JButton" binding="btnCursor" custom-create="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <vspacer id="6ea29">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="8ebd2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="50"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <tabbedpane id="e21de" binding="tabEditor">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <tabPlacement value="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="8ee1b" binding="mainTab" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Окно графического редактирования"/>
+                </constraints>
+                <properties/>
+                <border type="etched"/>
+                <children/>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="26c6" binding="statusBar" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <grid id="1c335" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="bevel-lowered"/>
+                <children>
+                  <component id="da16f" class="javax.swing.JLabel" binding="lblCoords">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                        <minimum-size width="45" height="15"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="8be2c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="bevel-lowered"/>
+                <children>
+                  <component id="afcdb" class="javax.swing.JLabel" binding="lblCurTask">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="2" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="99f1d" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="bevel-lowered"/>
+                <children>
+                  <component id="46195" class="javax.swing.JLabel" binding="lblCurTaskCaption">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Текуща задача"/>
+                    </properties>
+                  </component>
+                  <hspacer id="eff60">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+              <grid id="72e1b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ae7a1" class="javax.swing.JProgressBar" binding="progressBar1" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <string value="0"/>
+                      <value value="0"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ad4f6" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c4799" class="javax.swing.JLabel" binding="lblStatus">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Статус выполнения текущей задачи"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <hspacer id="f5159">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
