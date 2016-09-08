@@ -20,8 +20,8 @@ public class Server extends Thread{
     public    static  Connection      connection  = null;
 
     protected static String defaultUrl = "jdbc:oracle:thin:@127.0.0.1:1521:ORCL";
-    protected static String defaultName = "sys as sysdba";
-    protected static String defaultPassword = "123";
+    protected static String defaultName = "user";
+    protected static String defaultPassword = "user";
     protected static String defaultDriverName = "oracle.jdbc.driver.OracleDriver";
     protected static int defaultPort = 3128;
     protected static String defaultHost = "localhost";
@@ -56,8 +56,7 @@ public class Server extends Thread{
 
     public void setDBConn(String url,String name,String pass,String driverName){
         try {
-            //Class.forName(driverName);
-            DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
+            Class.forName(driverName);
             System.out.println("Драйвер подключен");
 
             connection = DriverManager.getConnection(url, name, pass);

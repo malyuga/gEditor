@@ -17,13 +17,13 @@ public class DBFunctions{
 
     public Long new_graph(ArrayList<Object> args) throws SQLException, ParseException {
         CallableStatement statement = connection.prepareCall("{call NEW_GRAPH(?, ?, ?, ?)}");
-        statement.setLong("OUT_ID", (Long) args.get(0));
-        statement.setString("IN_NAME", (String) args.get(1));
-        statement.setDate("IN_LAST_CHANGE", new Date((Long)args.get(2)));
-        statement.setString("IN_INFO", (String) args.get(3));
-        statement.registerOutParameter("OUT_ID", Types.BIGINT);
+        statement.setLong(1, (Long) args.get(0));
+        statement.setString(2, (String) args.get(1));
+        statement.setDate(3, new Date((Long)args.get(2)));
+        statement.setString(4, (String) args.get(3));
+        statement.registerOutParameter(1, Types.BIGINT);
         statement.executeUpdate();
-        long retVal = statement.getLong("OUT_ID");
+        long retVal = statement.getLong(1);
         return retVal;
     }
 
@@ -39,14 +39,14 @@ public class DBFunctions{
 
 /////////////////////////                ////////////////////////////////
     public ResultSet get_node(ArrayList<Object> args) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM Nodes WHERE G_ID = ?");
+        PreparedStatement statement = connection.prepareStatement("SELECT * FROM Node WHERE G_ID = ?");
         statement.setLong(1, (Long) args.get(0));
         ResultSet resultSet = statement.executeQuery();
         return resultSet;
     }
 ////////////////////////              ///////////////////////////////////////
     public ResultSet get_edges(ArrayList<Object> args) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("SELECT * FROM EDGE WHERE G_ID = ? AND START_NODE_ID = ?");
+        PreparedStatement statement = connection.prepareStatement("SELECT * FROM EDGE WHERE G_ID = ? AND S_ID = ?");
         statement.setLong(1, (Long) args.get(0));
         statement.setLong(2, (Long) args.get(1));
         ResultSet resultSet = statement.executeQuery();
@@ -77,26 +77,26 @@ public class DBFunctions{
     }
     public Long new_node(ArrayList<Object> args) throws SQLException {
         CallableStatement statement = connection.prepareCall("{call NEW_NODE(?, ?, ?, ?, ?, ?, ?)}");
-        statement.setLong("IN_ID", (Long) args.get(0));
-        statement.setLong("IN_G_ID", (Long) args.get(1));
-        statement.setLong("IN_NUMB", (Long) args.get(2));
-        statement.setString("IN_NAME", (String) args.get(3));
-        statement.setString("IN_INFO", (String) args.get(4));
+        statement.setLong(1, (Long) args.get(0));
+        statement.setLong(2, (Long) args.get(1));
+        statement.setLong(3, (Long) args.get(2));
+        statement.setString(4, (String) args.get(3));
+        statement.setString(5, (String) args.get(4));
         try{
-            statement.setDouble("IN_X", (Double) args.get(5));
+            statement.setDouble(6, (Double) args.get(5));
         }
         catch (Exception ex){
-            statement.setLong("IN_X", (Long) args.get(5));
+            statement.setLong(6, (Long) args.get(5));
         }
         try{
-            statement.setDouble("IN_Y", (Double) args.get(5));
+            statement.setDouble(7, (Double) args.get(5));
         }
         catch (Exception ex){
-            statement.setLong("IN_Y", (Long) args.get(6));
+            statement.setLong(7, (Long) args.get(6));
         }
-        statement.registerOutParameter("IN_ID", Types.BIGINT);
+        statement.registerOutParameter(1, Types.BIGINT);
         statement.executeUpdate();
-        long retVal = statement.getLong("IN_ID");
+        long retVal = statement.getLong(1);
         return retVal;
     }
 

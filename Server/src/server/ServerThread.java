@@ -34,24 +34,6 @@ public class ServerThread extends Thread {
         start();
     }
 
-    //converts year, month, and day integers into Date
-
-    public static java.sql.Date toDate(long year, long month, long day) throws SQLDataException {
-        if (((month < 1) || (month > 12)) && ((day < 1) || (day > 31))) {
-            throw new SQLDataException();
-        }
-        long add_days = (year - 1970) / 4;
-        if (year > 2000) {
-            add_days -= 1;
-        }
-        int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        int month_days = 0;
-        for (int i = 0; i < month - 1; ++i) {
-            month_days += days[i];
-        }
-        return new Date(((year - 1970) * 365 + add_days + month_days + day) * 24 * 3600 * 1000);
-    }
-
     private JSONObject dbFunctionsAsJSON(DBFunctions dbFunctions){
         Method[] methods = dbFunctions.getClass().getDeclaredMethods();
         String name = null;
