@@ -283,7 +283,7 @@ https://oss.sonatype.org/content/repositories/snapshots
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>3.8.2</version>
+				<version>4.13.1</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
